@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1f1e20 /* Arka plan rengini buradan değiştirin */
+}
+
+header {
+    background-color: #ffffff; /* Başlık arka plan rengi */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #555; /* Başlık altındaki açıklama rengi */
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap; /* Ürünlerin bir satırda taşması durumunda alt satıra geçmesini sağlar */
+    justify-content: center; /* Ürünleri yatayda ortaya hizalar */
+    gap: 20px; /* Ürünler arasındaki boşluk */
+    padding: 20px;
+    color: #b1b0b0; /* Başlık altındaki açıklama rengi */
+
+}
+
+#products h2 {
+    text-align: center; /* "Ürünlerimiz" başlığını ortaya hizalar */
+    width: 100%; /* Başlığın tüm genişliği kaplamasını sağlar */
+    margin-bottom: 20px; /* Başlık ile ürünler arasında boşluk bırakır */
+}
+
+.product {
+    background-color: #b1b0b0; /* Ürün kartlarının arka plan rengi */
+    border: 1px solid #ffffff; /* Ürün kartlarının kenar rengi */
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* 3 ürün yan yana olacak şekilde genişlik ayarı */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ürün içindeki metinleri ortaya hizalar */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333; /* Ürün başlık rengi */
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666; /* Ürün açıklama rengi */
+}
+
+.buyButton {
+    background-color: #478fbb; /* Buton arka plan rengi */
+    color: #fff; /* Buton yazı rengi */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.buyButton:hover {
+    background-color: #0056b3; /* Buton hover rengi */
+}
+
+footer {
+    background-color: #b1b0b0; /* Alt bilgi arka plan rengi */
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555; /* Alt bilgi yazı rengi */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 1px;
+    text-decoration: none;
+    color: #007bff; /* Bağlantıların başlangıç rengi */
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* Hover durumunda bağlantı rengi */
+}
